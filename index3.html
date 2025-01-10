@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-section {
+            flex: 1 1 calc(33.33% - 20px);
+            margin: 10px;
+        }
+        .footer-section h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .footer-section p,
+        .footer-section a {
+            font-size: 0.9rem;
+            color: white;
+            text-decoration: none;
+            line-height: 1.5;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .footer-section {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem quasi recusandae eaque fugit laboriosam voluptates, quisquam numquam consequuntur omnis?</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">Services</a></p>
+            <p><a href="#">Contact</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +91 8097652314</p>
+            <p>Address: green park colony </p>
+        </div>
+    </footer>
+</body>
+</html>
